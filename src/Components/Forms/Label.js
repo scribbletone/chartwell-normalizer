@@ -14,4 +14,10 @@ const Label = props => {
   }
 };
 
+Label.propTypes = {
+  text: PropTypes.string,
+  for: PropTypes.string
+};
+
+
 export default Label;

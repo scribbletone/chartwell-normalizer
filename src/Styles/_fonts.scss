@@ -1,0 +1,15 @@
+$font-folder-path: '../Fonts/';
+@mixin declare_font($path, $family, $weight:normal, $style:normal) {
+
+  @font-face {
+    font-family: $family;
+    src: url('#{$font-folder-path}#{$path}.eot');
+    src: url('#{$font-folder-path}#{$path}.eot?#iefix') format('embedded-opentype'),
+         url('#{$font-folder-path}#{$path}.woff2') format('woff2'),
+         url('#{$font-folder-path}#{$path}.woff') format('woff');
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+@include declare_font('ISO-v0.4-Regular-Web', 'ISO', normal, normal);
+@include declare_font('ISO-v0.4-Bold-Web', 'ISO', bold, normal);

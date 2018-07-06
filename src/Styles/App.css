@@ -31,11 +31,25 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+@font-face {
+  font-family: "ISO";
+  src: url("../Fonts/ISO-v0.4-Regular-Web.eot");
+  src: url("../Fonts/ISO-v0.4-Regular-Web.eot?#iefix") format("embedded-opentype"), url("../Fonts/ISO-v0.4-Regular-Web.woff2") format("woff2"), url("../Fonts/ISO-v0.4-Regular-Web.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "ISO";
+  src: url("../Fonts/ISO-v0.4-Bold-Web.eot");
+  src: url("../Fonts/ISO-v0.4-Bold-Web.eot?#iefix") format("embedded-opentype"), url("../Fonts/ISO-v0.4-Bold-Web.woff2") format("woff2"), url("../Fonts/ISO-v0.4-Bold-Web.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
 html {
-  font-size: 62.5%; }
+  font-size: 66%; }
 
 body {
-  font-family: Verdana, sans-serif;
+  font-family: "ISO", Georgia, sans-serif;
   font-size: 1.8rem;
   line-height: 1.3;
   color: #151515; }
@@ -46,7 +60,8 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 2.4rem;
-  margin-bottom: 0em; }
+  margin-bottom: 0em;
+  font-weight: normal; }
 
 h2 {
   font-size: 3.0rem;
@@ -98,7 +113,7 @@ header {
 
 main, footer {
   margin-bottom: 4rem;
-  max-width: 40rem;
+  max-width: 45rem;
   margin-left: auto;
   margin-right: auto; }
 
@@ -117,7 +132,7 @@ input[type=text], input[type=password], input[type=email], input[type=url], text
   outline: none;
   font-size: 1.8rem;
   line-height: 1.3em;
-  font-family: Verdana, sans-serif;
+  font-family: "ISO", Georgia, sans-serif;
   color: #000;
   background-color: #F7F7F7; }
   input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=url]:focus, textarea:focus {

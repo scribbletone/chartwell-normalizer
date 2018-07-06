@@ -13,4 +13,9 @@ const Error = props => {
   }
 };
 
+Error.propTypes = {
+  message: PropTypes.string
+};
+
+
 export default Error;

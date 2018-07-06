@@ -22,7 +22,8 @@ export default class TextArea extends React.Component {
           value={this.props.value}
           onChange={(e)=>{this.handleChange(e)}}
           placeholder={this.props.placeholder}
-          readOnly={this.props.readonly} />
+          readOnly={this.props.readonly}
+          onClick={(e)=>{this.props.onClick && this.props.onClick(e)}} />
       </div>
       );
   }

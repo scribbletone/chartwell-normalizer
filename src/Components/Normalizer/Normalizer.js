@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import TextInput from '../Forms/TextInput';
 import TextArea from '../Forms/TextArea';
 import Numeral from 'numeral';
@@ -18,6 +17,9 @@ export default class Normalizer extends React.Component {
     this.setState({
       [key]: val
     });
+  }
+  handleSelectInputText(e){
+    e.target.select();
   }
   normalizedData(){
     const offsetMaxVal = parseFloat(this.state.maxVal) - parseFloat(this.state.minVal);
@@ -75,7 +77,8 @@ export default class Normalizer extends React.Component {
             key='output'
             label='Normalized Data'
             readonly={true}
-            value={this.normalizedData()} />
+            value={this.normalizedData()}
+            onClick={(e)=>{this.handleSelectInputText(e)}} />
           : 
           <Error message={this.errorMessage()} />
         }
