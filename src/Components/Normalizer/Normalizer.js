@@ -73,7 +73,7 @@ export default class Normalizer extends React.Component {
         {this.state.data && !this.errorMessage() ? 
           <TextArea
             key='output'
-            label='Normalized Output'
+            label='Normalized Data'
             readonly={true}
             value={this.normalizedData()} />
           : 
