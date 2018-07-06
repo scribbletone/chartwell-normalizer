@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
 import '../Styles/App.css';
+import Normalizer from './Normalizer/Normalizer';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Welcome to React</h1>
+        <header>
+          <h1>FF Chartwell Data Normalizer</h1>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <main>
+          <Normalizer />
+        </main>
       </div>
     );
   }
