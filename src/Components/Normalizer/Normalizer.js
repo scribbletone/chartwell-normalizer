@@ -69,7 +69,7 @@ export default class Normalizer extends React.Component {
         <TextArea
           key='input'
           label='Data String'
-          placeholder='Enter string, for example: 10+30+25'
+          placeholder='Enter string, for example: 10+38+25'
           onChange={(v)=>{this.handleInputChange('data', v)}}
           value={this.state.data} />
         {this.state.data && !this.errorMessage() ? 
