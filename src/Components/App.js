@@ -9,11 +9,11 @@ class App extends Component {
         <header>
           <h1>FF Chartwell Data Normalizer</h1>
         </header>
-        <main>
+        <main style={{paddingLeft: '2rem', paddingRight: '2rem'}}>
           <Normalizer />
         </main>
 
-        <footer>
+        <footer style={{paddingLeft: '2rem', paddingRight: '2rem'}}>
           <div className='what'>
             <h5>What is this?</h5>
             <p>
